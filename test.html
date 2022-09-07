@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Text Gradient</title>
+  
+<style>
+:root {
+  --gradient: linear-gradient(225deg, transparent, black);
+  --gradient2: linear-gradient(to right,
+    /* This combination makes the animation look continuous. */
+    purple,
+    red, orange, yellow, green, blue, purple,
+    red, orange, yellow, green, blue, purple
+  );
+  --gradient3: linear-gradient(to right,
+    /* This combination makes the animation look continuous. */
+    black,
+    black, white, 
+    black, white
+  );
+}
+
+body {
+  font-family: sans-serif;
+}
+
+p {
+  max-width: 35rem;
+}
+
+.mdnlink {
+  font-family: monospace;
+}
+
+.demo {
+  width: 7em;
+  font-size: 5rem;
+  font-weight: bold;
+  font-family: 'Arial Black', sans-serif;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.mask-image {
+  mask-image: var(--gradient);
+  -webkit-mask-image: var(--gradient);
+}
+
+.background-clip {
+  background: var(--gradient2);
+  background-size: 200%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-position: left;
+  color: transparent;
+  margin: 0;
+  padding: 0;
+}
+
+#animate:checked ~ .background-clip {
+  animation: animate 5s infinite linear;
+}
+
+@keyframes animate {
+  to {
+    background-position: right;
+  }
+}
+
+
+
+.background-clip2 {
+  background: var(--gradient3);
+  background-size: 200%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-position: left;
+  color: transparent;
+  margin: 0;
+  padding: 0;
+}
+
+#animate:checked ~ .background-clip {
+  animation: animate 5s infinite linear;
+}
+
+#animate:checked ~ .background-clip2 {
+  animation: animate 5s infinite linear;
+}
+
+@keyframes animate {
+  to {
+    background-position: right;
+  }
+}
+#animate {
+  display: none;
+}
+</style>
+
+
+
+</head>
+
+<body translate="no" >
+
+<input id="animate" type="checkbox" checked>
+<div class="demo background-clip2">Hello World</div>
+
+  
+  
+  
+  
+
+</body>
+
+</html>
