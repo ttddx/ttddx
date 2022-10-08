@@ -1,12 +1,929 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    INDEX
-</body>
+    <head>
+        <meta charset="utf-8">
+        <title>Wunderkind - Multipurpose Responsive Onepage Template</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="img/assets/favicon.png" rel="icon" type="image/png">
+        <link href="css/init.css" rel="stylesheet" type="text/css">
+        <link href="css/ion-icons.min.css" rel="stylesheet" type="text/css">
+        <link href="css/etline-icons.min.css" rel="stylesheet" type="text/css">
+        <link href="css/theme.css" rel="stylesheet" type="text/css">
+        <link href="css/custom.css" rel="stylesheet" type="text/css">
+        <link href="css/colors/purple.css" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700%7CRaleway:400,100,200,300%7CHind:400,300" rel="stylesheet" type="text/css">
+    </head>
+    <body data-fade-in="true">
+
+        <div class="pre-loader"><div></div></div>
+
+        <!-- Start Header -->
+        <nav class="navbar nav-down" data-fullwidth="true" data-menu-style="transparent" data-animation="shrink">
+                                        <!-- Styles: light, dark, transparent, transparent-to-dark | Animation: hiding, shrink -->
+            <div class="container">
+
+                <div class="navbar-header">
+                    <div class="container">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar top-bar"></span>
+                            <span class="icon-bar middle-bar"></span>
+                            <span class="icon-bar bottom-bar"></span>
+                        </button>
+                        <a class="navbar-brand to-top" href="#"><img src="img/assets/logo-light.png" class="logo-light" alt="#"><img src="img/assets/logo-dark.png" class="logo-dark" alt="#"></a>
+                    </div>
+                </div>
+
+                <div id="navbar" class="navbar-collapse collapse">
+                    <div class="container">
+                        <ul class="nav navbar-nav menu-right">
+
+                            <!-- Each section must have corresponding ID ( #hero -> id="hero" ) -->
+                            <li><a href="#hero">首页</a></li>
+                            <li><a href="#about">关于我们</a></li>
+                            <li><a href="#services">服务</a></li>
+                            <li><a href="#contact">联系我们</a></li>
+
+                            <li class="nav-separator"></li>
+                            
+                            <li  class="nav-icon"><a href="1053062546" target="_blank"><svg t="1665237400211" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2543" width="16" height="16"><path d="M824.8 613.2c-16-51.4-34.4-94.6-62.7-165.3C766.5 262.2 689.3 112 511.5 112 331.7 112 256.2 265.2 261 447.9c-28.4 70.8-46.7 113.7-62.7 165.3-34 109.5-23 154.8-14.6 155.8 18 2.2 70.1-82.4 70.1-82.4 0 49 25.2 112.9 79.8 159-26.4 8.1-85.7 29.9-71.6 53.8 11.4 19.3 196.2 12.3 249.5 6.3 53.3 6 238.1 13 249.5-6.3 14.1-23.8-45.3-45.7-71.6-53.8 54.6-46.2 79.8-110.1 79.8-159 0 0 52.1 84.6 70.1 82.4 8.5-1.1 19.5-46.4-14.5-155.8z" p-id="2544" fill="#ffffff"></path></svg></a></li>
+                            <li  class="nav-icon"><a href="18501316207" target="_blank"><svg t="1665237478745" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3588" width="16" height="16"><path d="M664.250054 368.541681c10.015098 0 19.892049 0.732687 29.67281 1.795902-26.647917-122.810047-159.358451-214.077703-310.826188-214.077703-169.353083 0-308.085774 114.232694-308.085774 259.274068 0 83.708494 46.165436 152.460344 123.281791 205.78483l-30.80868 91.730191 107.688651-53.455469c38.558178 7.53665 69.459978 15.308661 107.924012 15.308661 9.66308 0 19.230993-0.470721 28.752858-1.225921-6.025227-20.36584-9.521864-41.723264-9.521864-63.862493C402.328693 476.632491 517.908058 368.541681 664.250054 368.541681zM498.62897 285.87389c23.200398 0 38.557154 15.120372 38.557154 38.061874 0 22.846334-15.356756 38.156018-38.557154 38.156018-23.107277 0-46.260603-15.309684-46.260603-38.156018C452.368366 300.994262 475.522716 285.87389 498.62897 285.87389zM283.016307 362.090758c-23.107277 0-46.402843-15.309684-46.402843-38.156018 0-22.941502 23.295566-38.061874 46.402843-38.061874 23.081695 0 38.46301 15.120372 38.46301 38.061874C321.479317 346.782098 306.098002 362.090758 283.016307 362.090758zM945.448458 606.151333c0-121.888048-123.258255-221.236753-261.683954-221.236753-146.57838 0-262.015505 99.348706-262.015505 221.236753 0 122.06508 115.437126 221.200938 262.015505 221.200938 30.66644 0 61.617359-7.609305 92.423993-15.262612l84.513836 45.786813-23.178909-76.17082C899.379213 735.776599 945.448458 674.90216 945.448458 606.151333zM598.803483 567.994292c-15.332197 0-30.807656-15.096836-30.807656-30.501688 0-15.190981 15.47546-30.477129 30.807656-30.477129 23.295566 0 38.558178 15.286148 38.558178 30.477129C637.361661 552.897456 622.099049 567.994292 598.803483 567.994292zM768.25071 567.994292c-15.213493 0-30.594809-15.096836-30.594809-30.501688 0-15.190981 15.381315-30.477129 30.594809-30.477129 23.107277 0 38.558178 15.286148 38.558178 30.477129C806.808888 552.897456 791.357987 567.994292 768.25071 567.994292z" p-id="3589" fill="#ffffff"></path></svg></a></li>
+                            <li  class="nav-icon"><a href="#" target="_blank"><svg t="1665237497901" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4649" width="16" height="16"><path d="M919.272727 416.581818L607.418182 79.127273c-11.636364-11.636364-32.581818-11.636364-44.218182 0-6.981818 6.981818-9.309091 16.290909-9.309091 25.6v181.527272c-258.327273 0-465.454545 207.127273-465.454545 463.127273 0 62.836364 13.963636 125.672727 39.563636 183.854546 37.236364-193.163636 221.090909-339.781818 425.890909-339.781819v181.527273c-2.327273 9.309091 2.327273 18.618182 9.309091 25.6 4.654545 6.981818 13.963636 9.309091 23.272727 9.309091s18.618182-4.654545 23.272728-11.636364L919.272727 465.454545c6.981818-6.981818 9.309091-13.963636 9.309091-23.272727s-4.654545-18.618182-9.309091-25.6z" p-id="4650" fill="#ffffff"></path></svg></a></li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- End Header -->
+
+        <!-- Hero -->
+        <section id="hero" class="hero-fullscreen parallax" data-overlay-dark="7">
+            <div class="background-image">
+                <img src="img/backgrounds/bg-1.jpg" alt="#">
+            </div>
+
+            <div class="container">
+                <div class="row">
+
+                    <div class="hero-content-slider mt20" data-autoplay="true" data-speed="4000">
+
+                        <div>
+                            <h1>影子陪玩殿<br><strong>“快乐相伴,精彩共享”</strong></h1>
+                            <p class="lead">群星悬殊而上陪练，拥有梦想只是一种智力，实现梦想才是一种能力</p>
+                            <a href="#about" class="btn btn-lg btn-primary btn-scroll">点我视察一波 <i class="ion-heart"></i></a>
+                        </div>
+
+                        <div>
+                            <h1>影子陪玩殿<br><strong>“敬业专业，客户至上，团结一致，其利断金”</strong></h1>
+                            <p class="lead">那些对未知的不安和惶恐幽默，父母之年，不可不知也。一则以喜，一则以惧</p>
+                            <a href="#about" class="btn btn-lg btn-primary btn-scroll">点我视察一波 <i class="ion-heart"></i></a>
+                        </div>
+
+                        <div>
+                            <h1>影子陪玩殿<br><strong>“助你辉煌战绩”</strong></h1>
+                            <p class="lead">两人都在伞下静默听雨吸引人，或者这是最好的结果，现在分手总好过你不爱我一拖再拖</p>
+                            <a href="#about" class="btn btn-lg btn-primary btn-scroll">点我视察一波 <i class="ion-heart"></i></a>
+                        </div>
+
+                        <div>
+                            <h1>影子陪玩殿<br><strong>“顾客情感是下一个竞争战场”</strong></h1>
+                            <p class="lead">不如骄傲地走开才好，全世界只有一个你，叫我如何不珍惜</p>
+                            <a href="#team" class="btn btn-lg btn-primary btn-scroll">点我视察一波 <i class="ion-heart"></i></a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- End Hero -->
+
+        <!-- About Us -->
+        <section id="about" class="pt100 pb90">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-12 text-center pb20">
+                        <h2>影子陪玩殿<br><strong></strong></h2>
+                        <p class="lead">专注端游陪玩<span class="color">5年</span>, 峡谷绝活哥<br>拥有专业团队,为您保驾护航</p>
+                    </div>
+
+                    <div class="col-sm-6 feature-left">
+                        <i class="icon-telescope size-3x color"></i>
+                        <i class="icon-telescope back-icon"></i>
+                        <div class="feature-left-content">
+                            <h4><strong>急速加急</strong><br>着急上分？没关系</h4>
+                            <p>我们拥有专业的陪玩团队和声音优质且细心的陪玩们,</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 feature-left">
+                        <i class="icon-circle-compass size-3x color"></i>
+                        <i class="icon-circle-compass back-icon"></i>
+                        <div class="feature-left-content">
+                            <h4><strong>大神陪练</strong><br>Coding With Fun</h4>
+                            <p>我们拥有专业的陪玩团队和声音优质且细心的陪玩们,</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 feature-left">
+                        <i class="icon-genius size-3x color"></i>
+                        <i class="icon-genius back-icon"></i>
+                        <div class="feature-left-content">
+                            <h4><strong>指定英雄</strong><br>Available When You Need Us</h4>
+                            <p>我们拥有专业的陪玩团队和声音优质且细心的陪玩们,</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 feature-left">
+                        <i class="icon-layers size-3x color"></i>
+                        <i class="icon-layers back-icon"></i>
+                        <div class="feature-left-content">
+                            <h4><strong>特殊定制</strong><br>New York Based</h4>
+                            <p>我们拥有专业的陪玩团队和声音优质且细心的陪玩们,</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- End About Us -->
+
+        <!-- Who We Are -->
+        <section id="who-we-are" class="parallax pt40 pb40" data-overlay-dark="8">
+            <div class="background-image">
+                <img src="img/backgrounds/bg-2.jpg" alt="#">
+            </div>
+            <div class="container">
+
+            </div>
+        </section>
+        <!-- End Who We Are -->
+
+        <!-- Team -->
+        <section id="team" class="hero-fullscreen2 pt100 pb90">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-12 text-center">
+                        <h2>我们的<strong> 优质团队</strong></h2>
+                        <p class="lead">具有伟大想法的<span class="color"> 团队</span>. 不做低价只做品质.</p>
+                    </div>
+
+                    <div class="team-slider owl-carousel dark-pagination col-md-12">
+                        <div class="team">
+                            <div class="team-container">
+                                <div class="team-image">
+                                    <img src="img/team/1.jpg" class="img-responsive" alt="#" />
+                                </div>
+                                <div class="team-caption">
+                                    <div>
+                                        <div>
+                                            <ul>
+                                                <li class="social-icon"><a href="https://www.facebook.com/" target="_blank"><i class="ion-social-facebook"></i></a></li>
+                                                <li class="social-icon"><a href="https://www.twitter.com/" target="_blank"><i class="ion-social-twitter"></i></a></li>
+                                                <li class="social-icon"><a href="https://www.youtube.com/" target="_blank"><i class="ion-social-youtube"></i></a></li>
+                                                <li class="social-icon"><a href="https://www.linkedin.com/" target="_blank"><i class="ion-social-linkedin"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h6>店长 / CEO</h6>
+                            <h5>张小三</h5>
+                            <p>3岁玩LOL 5岁云顶 S1赛季滑板鞋上王者</p>
+                        </div>
+                        <div class="team">
+                            <div class="team-container">
+                                <div class="team-image">
+                                    <img src="img/team/2.jpg" class="img-responsive" alt="#" />
+                                </div>
+                                <div class="team-caption">
+                                    <div>
+                                        <div>
+                                            <ul>
+                                                <li class="social-icon"><a href="https://www.facebook.com/" target="_blank"><i class="ion-social-facebook"></i></a></li>
+                                                <li class="social-icon"><a href="https://www.twitter.com/" target="_blank"><i class="ion-social-twitter"></i></a></li>
+                                                <li class="social-icon"><a href="https://www.youtube.com/" target="_blank"><i class="ion-social-youtube"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h6>店长老婆</h6>
+                            <h5>李小四</h5>
+                            <p>Vivamus motestues phasellus enim sed orci eu pharetra. Donec posuere nunc vitae tortor sagittis feugiat in non massa. Quisqueeas sed mi nec.</p>
+                        </div>
+                        <div class="team">
+                            <div class="team-container">
+                                <div class="team-image">
+                                    <img src="img/team/3.jpg" class="img-responsive" alt="#" />
+                                </div>
+                                <div class="team-caption">
+                                    <div>
+                                        <div>
+                                            <ul>
+                                                <li class="social-icon"><a href="https://www.facebook.com/" target="_blank"><i class="ion-social-facebook"></i></a></li>
+                                                <li class="social-icon"><a href="https://www.twitter.com/" target="_blank"><i class="ion-social-twitter"></i></a></li>
+                                                <li class="social-icon"><a href="https://www.youtube.com/" target="_blank"><i class="ion-social-youtube"></i></a></li>
+                                                <li class="social-icon"><a href="https://www.dribbble.com/" target="_blank"><i class="ion-social-dribbble"></i></a></li>
+                                                <li class="social-icon"><a href="https://www.linkedin.com/" target="_blank"><i class="ion-social-linkedin"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h6>Designer</h6>
+                            <h5>Chris Holland</h5>
+                            <p>Vivamus motestues phasellus enim sed orci eu pharetra. Donec posuere nunc vitae tortor sagittis feugiat in non massa. Quisqueeas sed mi nec.</p>
+                        </div>
+                        <div class="team">
+                            <div class="team-container">
+                                <div class="team-image">
+                                    <img src="img/team/4.jpg" class="img-responsive" alt="#" />
+                                </div>
+                                <div class="team-caption">
+                                    <div>
+                                        <div>
+                                            <ul>
+                                                <li class="social-icon"><a href="https://www.facebook.com/" target="_blank"><i class="ion-social-facebook"></i></a></li>
+                                                <li class="social-icon"><a href="https://www.twitter.com/" target="_blank"><i class="ion-social-twitter"></i></a></li>
+                                                <li class="social-icon"><a href="https://www.dribbble.com/" target="_blank"><i class="ion-social-dribbble"></i></a></li>
+                                                <li class="social-icon"><a href="https://www.linkedin.com/" target="_blank"><i class="ion-social-linkedin"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h6>Art Director</h6>
+                            <h5>Dave Harper</h5>
+                            <p>Vivamus motestues phasellus enim sed orci eu pharetra. Donec posuere nunc vitae tortor sagittis feugiat in non massa. Quisqueeas sed mi nec.</p>
+                        </div>
+                        <div class="team">
+                            <div class="team-container">
+                                <div class="team-image">
+                                    <img src="img/team/5.jpg" class="img-responsive" alt="#" />
+                                </div>
+                                <div class="team-caption">
+                                    <div>
+                                        <div>
+                                            <ul>
+                                                <li class="social-icon"><a href="https://www.facebook.com/" target="_blank"><i class="ion-social-facebook"></i></a></li>
+                                                <li class="social-icon"><a href="https://www.twitter.com/" target="_blank"><i class="ion-social-twitter"></i></a></li>
+                                                <li class="social-icon"><a href="https://www.youtube.com/" target="_blank"><i class="ion-social-youtube"></i></a></li>
+                                                <li class="social-icon"><a href="https://www.dribbble.com/" target="_blank"><i class="ion-social-dribbble"></i></a></li>
+                                                <li class="social-icon"><a href="https://www.linkedin.com/" target="_blank"><i class="ion-social-linkedin"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h6>Founder</h6>
+                            <h5>Tracey Mathis</h5>
+                            <p>Vivamus motestues phasellus enim sed orci eu pharetra. Donec posuere nunc vitae tortor sagittis feugiat in non massa. Quisqueeas sed mi nec.</p>
+                        </div>
+                        <div class="team">
+                            <div class="team-container">
+                                <div class="team-image">
+                                    <img src="img/team/6.jpg" class="img-responsive" alt="#" />
+                                </div>
+                                <div class="team-caption">
+                                    <div>
+                                        <div>
+                                            <ul>
+                                                <li class="social-icon"><a href="https://www.facebook.com/" target="_blank"><i class="ion-social-facebook"></i></a></li>
+                                                <li class="social-icon"><a href="https://www.twitter.com/" target="_blank"><i class="ion-social-twitter"></i></a></li>
+                                                <li class="social-icon"><a href="https://www.youtube.com/" target="_blank"><i class="ion-social-youtube"></i></a></li>
+                                                <li class="social-icon"><a href="https://www.linkedin.com/" target="_blank"><i class="ion-social-linkedin"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h6>Developer</h6>
+                            <h5>William Beck</h5>
+                            <p>Vivamus motestues phasellus enim sed orci eu pharetra. Donec posuere nunc vitae tortor sagittis feugiat in non massa. Quisqueeas sed mi nec.</p>
+                        </div>
+                        <div class="team">
+                            <div class="team-container">
+                                <div class="team-image">
+                                    <img src="img/team/7.jpg" class="img-responsive" alt="#" />
+                                </div>
+                                <div class="team-caption">
+                                    <div>
+                                        <div>
+                                            <ul>
+                                                <li class="social-icon"><a href="https://www.facebook.com/" target="_blank"><i class="ion-social-facebook"></i></a></li>
+                                                <li class="social-icon"><a href="https://www.twitter.com/" target="_blank"><i class="ion-social-twitter"></i></a></li>
+                                                <li class="social-icon"><a href="https://www.youtube.com/" target="_blank"><i class="ion-social-youtube"></i></a></li>
+                                                <li class="social-icon"><a href="https://www.linkedin.com/" target="_blank"><i class="ion-social-linkedin"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h6>Designer</h6>
+                            <h5>Steven Griffin</h5>
+                            <p>Vivamus motestues phasellus enim sed orci eu pharetra. Donec posuere nunc vitae tortor sagittis feugiat in non massa. Quisqueeas sed mi nec.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- End Team -->
+
+        <!-- Video Section -->
+        <section class="parallax pt40 pb40" data-overlay-light="9">
+            <div class="background-image">
+                <img src="img/backgrounds/bg-3.jpg" alt="#">
+            </div>
+            <div class="container">
+                <div class="row vertical-align">
+
+                    <div class="col-md-6 pr30 mt40 mb40">
+                        <h2><strong>精彩操作</strong><br>啦啦啦啦</h2>
+                        <p>第一段文案</p>
+                        <p>第二段文案</p>
+                    </div>
+
+                    <div class="col-md-6 mt50 mb50">
+                        <div class="video-container">
+                            <img src="img/video/thumbnail-youtube.jpg" />
+                            <iframe data-video-embed="https://player.bilibili.com/player.html?aid=857139376&bvid=BV1SV4y1s7Z3&cid=808074172"></iframe>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- End Video Section -->
+
+        <!-- Fun Facts -->
+        <section id="fun-facts" data-animate="true">
+            <div class="container-fluid">
+                <div class="row">
+
+                    <div class="col-sm-3 counter">
+                        <h1 class="bold" data-count="4246"></h1>
+                        <h5>吹牛逼1</h5>
+                    </div>
+                    <div class="col-sm-3 counter">
+                        <h1 class="bold" data-count="618"></h1>
+                        <h5>吹牛逼2</h5>
+                    </div>
+                    <div class="col-sm-3 counter">
+                        <h1 class="bold" data-count="240"></h1>
+                        <h5>吹牛逼3</h5>
+                    </div>
+                    <div class="col-sm-3 counter">
+                        <h1 class="bold" data-count="96"></h1>
+                        <h5>吹牛逼4</h5>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- End Fun Facts -->
+
+        <!-- Quotes -->
+        <section id="quotes" class="parallax pt100 pb90" data-overlay-dark="8">
+            <div class="background-image">
+                <img src="img/backgrounds/bg-4.jpg" alt="#">
+            </div>
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-12">
+                        <div class="quote-slider navigation-thin container white text-center" data-autoplay="true" data-speed="2000">
+                            <div>
+                                <h2>
+                                    <i class="vossen-quote color"></i>
+                                    测试测试测试测试测试测试测试测试测试<strong>测试测试测试测试测试测试</strong><br>测试测试测试测试测
+                                    <i class="vossen-quote color"></i>
+                                </h2>
+                                <p class="label label-primary">测试测试测试测试测</p>
+                            </div>
+                            <div>
+                                <h2>
+                                    <i class="vossen-quote color"></i>
+                                    测试测试测试测试测<br>测试测试测试测试测 <strong>测试测试测试测试测</strong>
+                                    <i class="vossen-quote color"></i>
+                                </h2>
+                                <p class="label label-primary">测试测试测试测试测</p>
+                            </div>
+                            <div>
+                                <h2>
+                                    <i class="vossen-quote color"></i>
+                                        <strong>测试测试测试测试测</strong> 测试测试测试测试测
+                                    <i class="vossen-quote color"></i>
+                                </h2>
+                                <p class="label label-primary">测试测试测试测试测</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- End Quotes -->
+
+        <!-- Services -->
+        <section id="services" class="pt100 pb90">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-12 text-center pb20">
+                        <h2 class="">What We Do<br><strong>Our Capabilities</strong></h2>
+                        <p class="lead">A highly skilled professional service with a <span class="color">creative touch</span>.</p>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 feature-left">
+                        <i class="icon-telescope size-3x color"></i>
+                        <i class="icon-telescope back-icon"></i>
+                        <div class="feature-left-content">
+                            <h4><strong>Graphic Design</strong><br>Crafting With Love</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 feature-left">
+                        <i class="icon-circle-compass size-3x color"></i>
+                        <i class="icon-circle-compass back-icon"></i>
+                        <div class="feature-left-content">
+                            <h4><strong>Modern Coding</strong><br>Crafting With Love</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 feature-left">
+                        <i class="icon-genius size-3x color"></i>
+                        <i class="icon-genius back-icon"></i>
+                        <div class="feature-left-content">
+                            <h4><strong>Web Optimization</strong><br>Lightning Fast</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 feature-left">
+                        <i class="icon-layers size-3x color"></i>
+                        <i class="icon-layers back-icon"></i>
+                        <div class="feature-left-content">
+                            <h4><strong>Brand Indentity</strong><br>Making a New You</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 feature-left">
+                        <i class="icon-gears size-3x color"></i>
+                        <i class="icon-gears back-icon"></i>
+                        <div class="feature-left-content">
+                            <h4><strong>24/7 Free Support</strong><br>Free Support</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 feature-left">
+                        <i class="icon-globe size-3x color"></i>
+                        <i class="icon-globe back-icon"></i>
+                        <div class="feature-left-content">
+                            <h4><strong>Having Fun</strong><br>Office Surfing</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- End Services -->
+
+        <!-- Callout -->
+        <section class="parallax light bg-img-9" data-overlay-light="9">
+            <div class="background-image">
+                <img src="img/backgrounds/bg-5.jpg" alt="#">
+            </div>
+            <div class="container pt100 pb100">
+                <div class="row pt20">
+
+                    <div class="col-md-12 text-center">
+                        <h2>Ready to <span class="bold">Kickstart</span> Your Project</h2>
+                        <p class="lead">Use Wunderkind to build <span class="color">amazing</span> new website</p>
+                        <a href="?ref=VossenDesign" target="_blank" class="btn btn-md btn-primary btn-appear mt30"><span>Purchase Now <i class="ion-checkmark"></i></span></a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- End Callout -->
+
+        <!-- Portfolio -->
+        <section id="works" class="pt100 pb110">
+            <div class="container">
+                <div class="row text-center">
+
+                    <div class="col-md-12 text-center pb20">
+                        <h2>Take a Look at<br><strong>Some of Our Work</strong></h2>
+                        <p class="lead">Wide range of <span class="color">successful</span> digital and print projects.</p>
+                    </div>
+
+                    <div class="portfolio" data-gap="20"><!-- Values: 10, 15, 20, 25, 30 and 35 -->
+
+                        <!-- Portfolio Category Filters -->
+                        <ul class="vossen-portfolio-filters" data-initial-filter="*">
+                            <li data-filter="*">Show All</li>
+                            <li data-filter="Branding">Branding</li>
+                            <li data-filter="Digital">Digital</li>
+                            <li data-filter="Print">Print</li>
+                        </ul>
+
+                        <!-- Portfolio Items Container-->
+                        <div class="vossen-portfolio">
+
+                            <!-- Portfolio Item -->
+                            <div class="col-md-4 col-sm-6" data-filter="Branding">
+                                <a href="project-slides.html">
+                                    <div class="portfolio-item">
+                                        <div class="item-caption">
+                                            <h4>Wunderkind</h4>
+                                            <p>Branding</p>
+                                        </div>
+                                        <div class="item-image">
+                                            <img alt="#" src="img/portfolio/1.jpg" />
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Portfolio Item -->
+                            <div class="col-md-4 col-sm-6" data-filter="Digital">
+                                <a href="project-slides.html">
+                                    <div class="portfolio-item">
+                                        <div class="item-caption">
+                                            <h4>iWatch App</h4>
+                                            <p>Digital</p>
+                                        </div>
+                                        <div class="item-image">
+                                            <img alt="#" src="img/portfolio/2.jpg" />
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Portfolio Item -->
+                            <div class="col-md-4 col-sm-12" data-filter="Branding Digital">
+                                <a href="project-slides.html">
+                                    <div class="portfolio-item">
+                                        <div class="item-caption">
+                                            <h4>Wunder Hero</h4>
+                                            <p>Branding</p>
+                                        </div>
+                                        <div class="item-image">
+                                            <img alt="#" src="img/portfolio/3.jpg" />
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Portfolio Item -->
+                            <div class="col-md-8 col-sm-6" data-filter="Branding">
+                                <a href="project-slides.html">
+                                    <div class="portfolio-item">
+                                        <div class="item-caption">
+                                            <h4>Thom Business Cards</h4>
+                                            <p>Branding &amp; Digital</p>
+                                        </div>
+                                        <div class="item-image">
+                                            <img alt="#" src="img/portfolio/4.jpg" />
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Portfolio Item -->
+                            <div class="col-md-4 col-sm-6" data-filter="Print Digital">
+                                <a href="project-slides.html">
+                                    <div class="portfolio-item">
+                                        <div class="item-caption">
+                                            <h4>Label Mockup</h4>
+                                            <p>Print Category</p>
+                                        </div>
+                                        <div class="item-image">
+                                            <img alt="#" src="img/portfolio/5.jpg" />
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Portfolio Item -->
+                            <div class="col-md-4 col-sm-6" data-filter="Print">
+                                <a href="project-slides.html">
+                                    <div class="portfolio-item">
+                                        <div class="item-caption">
+                                            <h4>Letter Mockup</h4>
+                                            <p>Print Category</p>
+                                        </div>
+                                        <div class="item-image">
+                                            <img alt="#" src="img/portfolio/6.jpg" />
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Portfolio Item -->
+                            <div class="col-md-4 col-sm-6" data-filter="Print">
+                                <a href="project-slides.html">
+                                    <div class="portfolio-item">
+                                        <div class="item-caption">
+                                            <h4>Boxed Cards</h4>
+                                            <p>Print Work</p>
+                                        </div>
+                                        <div class="item-image">
+                                            <img alt="#" src="img/portfolio/7.jpg" />
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Portfolio Item -->
+                            <div class="col-md-4 col-sm-6" data-filter="Branding">
+                                <a href="project-gallery.html">
+                                    <div class="portfolio-item">
+                                        <div class="item-caption">
+                                            <h4>Thanks Letter</h4>
+                                            <p>Branding</p>
+                                        </div>
+                                        <div class="item-image">
+                                            <img alt="product" src="img/portfolio/8.jpg" />
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Portfolio Item -->
+                            <div class="col-md-4 col-sm-6" data-filter="Branding Digital">
+                                <a href="project-slides.html">
+                                    <div class="portfolio-item">
+                                        <div class="item-caption">
+                                            <h4>Flying Mac</h4>
+                                            <p>Branding</p>
+                                        </div>
+                                        <div class="item-image">
+                                            <img alt="product" src="img/portfolio/9.jpg" />
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <a href="portfolio-contained.html" class="btn btn-md btn-light btn-appear mt30"><span>View All <i class="ion-arrow-right-c"></i></span></a>
+
+                </div>
+            </div>
+        </section>
+        <!-- End Portfolio -->
+
+        <!-- Testimonials -->
+        <section id="testimonials" class="parallax pt100 pb90" data-overlay-dark="9">
+            <div class="background-image">
+                <img src="img/backgrounds/bg-6.jpg" alt="#">
+            </div>
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-12 text-center pb20">
+                        <h2>What Clients<br><strong>Say About Us</strong></h2>
+                    </div>
+
+                    <div class="col-md-12 text-center">
+
+                        <div class="testimonials quote-icons" data-autoplay="false" data-speed="4000">
+
+                            <!-- Testimonial One -->
+                            <div>
+                                <p>
+                                    <i class="vossen-quote color"></i>
+                                    This guys are amazing! They were so quick to respond and let me tell you, they are all knowing!<br><span class="color">I highly recommend</span> their themes! They are all about making their clients happy!
+                                    <i class="vossen-quote color"></i>
+                                </p>
+                                <h5><strong>Jack Westbrook</strong></h5>
+                                <p class="occupation">Product Designer</p>
+                            </div>
+                            <!-- Testimonial Two -->
+                            <div>
+                                <p>
+                                    <i class="vossen-quote color"></i>
+                                    I have purchased tens of templates from ThemeForest and this one is undoubtedly the best<br>I ever tried. <span class="color">Easy to edit,</span> nicely coded. You guys, you did a great job here!
+                                    <i class="vossen-quote color"></i>
+                                </p>
+                                <h5><strong>Lindsay Swanson</strong></h5>
+                                <p class="occupation">Web Designer</p>
+                            </div>
+                            <!-- Testimonial Three -->
+                            <div>
+                                <p>
+                                    <i class="vossen-quote color"></i>
+                                    This is one of the best themes that I bought on ThemeForest. It is well documented and <br>well coded but the best of all is the <span class="color">friendly and quick support</span> behind.
+                                    <i class="vossen-quote color"></i>
+                                </p>
+                                <h5><strong>Jared Jackson</strong></h5>
+                                <p class="occupation">UX Designer</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- End Testimonials -->
+
+        <!-- Clients Section -->
+        <section class="pt70 pb70">
+            <div class="container">
+                <div class="row">
+
+                    <div class="clients-slider" data-autoplay="false" data-speed="4000">
+                        <div><img src="img/clients/1.png" class=" " alt="#"></div>
+                        <div><img src="img/clients/2.png" class="img-responsive" alt="#"></div>
+                        <div><img src="img/clients/3.png" class="img-responsive" alt="#"></div>
+                        <div><img src="img/clients/4.png" class="img-responsive" alt="#"></div>
+                        <div><img src="img/clients/5.png" class="img-responsive" alt="#"></div>
+                        <div><img src="img/clients/6.png" class="img-responsive" alt="#"></div>
+                        <div><img src="img/clients/7.png" class="img-responsive" alt="#"></div>
+                        <div><img src="img/clients/8.png" class="img-responsive" alt="#"></div>
+                        <div><img src="img/clients/9.png" class="img-responsive" alt="#"></div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- End Clients -->
+
+        <!-- Get Connected -->
+        <section class="parallax pt100 pb100" data-overlay-dark="9">
+            <div class="background-image">
+                <img src="img/backgrounds/bg-7.jpg" alt="#">
+            </div>
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-sm-8 mr-auto text-center">
+                        <h2>Get Connected<br><strong>Follow Us</strong></h2>
+                        <p class="lead">Get connected with us on social networks!</p>
+                    </div>
+
+                    <div class="col-md-12">
+                        <ul class="connected-icons social-icons">
+
+                            <li class="connected-icon">
+                                <a target="_blank" href="#">
+                                    <i class="ion-social-facebook"></i>
+                                    <h5>Facebook</h5>
+                                    <p>Be Our Friend</p>
+                                </a>
+                            </li>
+
+                            <li class="connected-icon">
+                                <a target="_blank" href="#">
+                                    <i class="ion-social-youtube"></i>
+                                    <h5>Youtube</h5>
+                                    <p>Watch Our Videos</p>
+                                </a>
+                            </li>
+
+                            <li class="connected-icon">
+                                <a target="_blank" href="#">
+                                    <i class="ion-social-twitter"></i>
+                                    <h5>Twitter</h5>
+                                    <p>Follow Us</p>
+                                </a>
+                            </li>
+
+                            <li class="connected-icon">
+                                <a target="_blank" href="#">
+                                    <i class="ion-social-instagram"></i>
+                                    <h5>Instagram</h5>
+                                    <p>See Our Pictures</p>
+                                </a>
+                            </li>
+
+                            <li class="connected-icon">
+                                <a target="_blank" href="#">
+                                    <i class="ion-social-googleplus"></i>
+                                    <h5>Google+</h5>
+                                    <p>Join Our Circle</p>
+                                </a>
+                            </li>
+
+                            <li class="connected-icon">
+                                <a target="_blank" href="#">
+                                    <i class="ion-social-skype"></i>
+                                    <h5>Skype</h5>
+                                    <p>Get in Touch</p>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Get Connected -->
+
+        <!-- Start Price List -->
+        <section class="pt100 pb100 pricing-1">
+            <div class="container">
+
+            </div>
+        </section>
+        <!-- End Price List -->
+
+        <!-- Contact Info -->
+        <section class="parallax pt110 pb70" data-overlay-dark="8">
+            <div class="background-image">
+                <img src="img/backgrounds/bg-8.jpg" alt="#">
+            </div>
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-12 details white text-center">
+                        <div class="phone-number mb10">
+                            <h1 class="bold">48-1516-2342</h1>
+                        </div>
+                        <div class="col-lg-12">
+                            <h3>hello@<span class="color">domain.com</span></h3>
+                            <h4>124 Central West, Manhattan, <span class="color">New York</span></h4>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- End Contact Info -->
+
+        <!-- Contact Form -->
+        <section id="contact" class="pt120 pb100">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-12 text-center pb20">
+                        <h2>Get In Touch<br><strong>Contact Us</strong></h2>
+                        <p class="lead">We would like to <span class="color">hear from you</span></p>
+                    </div>
+
+                    <div class="col-md-8 col-md-offset-2 contact box-style">
+                        <div id="message-info"></div>
+                        <!-- Forms can be functional only on server. Upload to your server when testing. -->
+                        <form id="contactform" method="post">
+
+                            <div class="col-sm-12">
+                                <input name="name" id="name" placeholder="Your Name *"/>
+                            </div>
+                            <div class="col-sm-6">
+                                <input name="email" id="email" placeholder="Your Email *"/>
+                            </div>
+                            <div class="col-sm-6">
+                                <input name="phone" id="phone" placeholder="Your Phone"/>
+                            </div>
+                            <div class="col-sm-12">
+                                <textarea name="message" rows="9" id="message" placeholder="Your Message *"></textarea>
+                            </div>
+                            <div class="col-md-12">
+                                <input type="submit" class="submit btn btn-lg btn-primary" id="submit" value="Send Message"/>
+                            </div>
+
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- End Contact Form -->
+
+        <!-- Google Map -->
+        <section
+            id="vossen-map"
+            data-map-address="160 Central Park West, New York, NY 10023, USA"
+            data-marker-info="Come visit us today!<br>4th West St, New York"
+            data-maps-api-key="AIzaSyBD3JE1T5ssqLMdfRgR1bErpuWNBtIMHbI"
+            data-map-zoom="16"
+            data-map-height="500px"
+            data-map-style="light"> <!-- dark, light, standard -->
+        </section>
+        <!-- End Google Map -->
+
+        <!-- Start Footer -->
+        <footer id="footer" class="footer style-1 dark">
+
+            <a href="index.html"><img src="img/assets/footer-logo.png" alt="#" class="mr-auto img-responsive"></a>
+            <ul>
+                <li><a href="https://www.twitter.com/" target="_blank" class="color"><i class="ion-social-twitter"></i></a></li>
+                <li><a href="https://www.facebook.com/" target="_blank" class="color"><i class="ion-social-facebook"></i></a></li>
+                <li><a href="https://www.linkedin.com/" target="_blank" class="color"><i class="ion-social-linkedin"></i></a></li>
+                <li><a href="https://www.pinterest.com/" target="_blank" class="color"><i class="ion-social-pinterest"></i></a></li>
+                <li><a href="https://plus.google.com/" target="_blank" class="color"><i class="ion-social-googleplus"></i></a></li>
+            </ul>
+            <a href="" target="_blank"><strong>© Wunderkind 2016</strong></a>
+            <p>Made with love for great people.</p>
+
+            <!-- Back To Top Button -->
+            <span><a class="scroll-top"><i class="ion-chevron-up"></i></a></span>
+
+        </footer>
+        <!-- End Footer -->
+
+        <script src="js/jquery.js"></script>
+        <script src="js/init.js"></script>
+        <script src="js/scripts.js"></script>
+
+    </body>
 </html>
